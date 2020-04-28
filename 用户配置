@@ -1,0 +1,27 @@
+
+
+
+// npm install webpack vue vue-loader
+// cnpm install css-loader vue-template-compiler 
+// cnpm install webpack --save-dev
+// cnpm install style-loader url-loader file-loader --save-dev
+// cnpm install style-loader stylus-loader --save-dev
+// cnpm i stylus stylus-loader --save
+
+// cnpm install webpack-dev-server --save-dev
+cnpm install cross-env -S
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+在window下要配置build，所以不想window和mac配置两套配置所以安装cross-env
+    "build": "set NODE_ENV=production webpack --config webpack.config.js",
+
+
+cnpm install html-webpack-plugin --save-dev
+cnpm install postcss-loader autoprefixer babel-loader babel-core  -S
+cnpm install babel-preset-env babel-plugin-transform-vue-jsx --save
+cnpm install babel-helper-vue-jsx-merge-props babel-plugin-syntax-jsx --save
+
+cnpm install extract-text-webpack-plugin 
+
+
+.. 未实现功能 切换tab、清除勾选
+以及4.1之后的webpack配置
